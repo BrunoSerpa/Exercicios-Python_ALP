@@ -2,4 +2,4 @@
 primeiroNumero=int(input('Digite um número \nresposta: '))
 segundoNumero=int(input('Digite outro número \nresposta: '))
 soma=primeiroNumero+segundoNumero
-print('A soma desses números é {}'.format(soma))
+print(f'A soma desses números é {soma}')
