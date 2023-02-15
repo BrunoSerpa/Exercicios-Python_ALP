@@ -2,4 +2,4 @@
 salario = float(input("Digite um salário: R$"))
 porcentagem = float(input("Digite quanto o salário irá aumentar: (sem o %)"))
 novoSalario = salario*(1+porcentagem/100)
-print("O novo salário será: R${}".format(novoSalario))
+print(f"O novo salário será: R${novoSalario}")
