@@ -4,4 +4,4 @@ horas = int(input("insira um número de horas\n resposta:"))
 minutos = int(input("insira um número de minutos\n resposta:"))
 segundos = int(input("insira um número de segundos\n resposta:"))
 segundosTotais = ((dias * 24 + horas) * 60 + minutos) * 60 + segundos
-print('Isso tudo é igual a {} segundos'.format(segundosTotais))
+print(f'Isso tudo é igual a {segundosTotais} segundos')
