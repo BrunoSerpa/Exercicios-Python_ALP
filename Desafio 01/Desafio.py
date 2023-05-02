@@ -98,7 +98,7 @@ e que terminan com uma letra tipo outras, é fácil ver que existem 71 preposiç
 QUESTÃO A) E no Texto B, quantas preposições existem?
 """
 quantPrepo=0
-for palavra in txtA:
+for palavra in txtB:
     if palavra[0] in "zmb" and palavra[-1] not in "zmb": quantPrepo+=1
 print(quantPrepo)
 
@@ -110,7 +110,7 @@ Assim, lendo o Texto A, é possível identificar 84 verbos no texto, dos quais 7
 QUESTÃO B) Já no Texto B, quantos são os verbos?
 """
 quantVerbo, quantVerboPri=0, 0
-for palavra in txtA:
+for palavra in txtB:
     if not palavra[-1] in "zmb" and len(palavra)==7:
         quantVerbo+=1
         if not palavra[0] in "zmb":
@@ -186,8 +186,8 @@ def alfabetoGooglon(palavra):
         resp = resp + M[ordem.index(c)]
     return resp
 
-txtA.sort(key=alfabetoGooglon)
-print(txtA)
+txtB.sort(key=alfabetoGooglon)
+print(txtB)
 
 """
 Mas como os Googlons escrevem números? Bem, no Googlon, as palavras também são números dados em base 20,
@@ -214,7 +214,7 @@ def numeroDaLetra(palavra):
     return somaNumLetras
 
 cont = 0
-for palavraB in txtA:
+for palavraB in txtB:
     if len(set(palavraB)) == len(palavraB) and numeroDaLetra(palavraB)%42==0:
         cont= cont+1
         print (palavraB)
