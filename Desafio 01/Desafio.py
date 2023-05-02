@@ -188,3 +188,33 @@ def alfabetoGooglon(palavraB):
 
 txtB.sort(key=alfabetoGooglon)
 print(txtB)
+
+"""
+Mas como os Googlons escrevem números? Bem, no Googlon, as palavras também são números dados em base 20,
+onde cada letra é um dígito, e os dígitos são ordenados do menos significativo para o mais significativo (o inverso do
+nosso sistema, para ajudar no seu programa). Ou seja, a primeira posição é a unidade, a segunda posição vale 20, a
+terceira vale 400, e assim por diante. Os valores das letras são dados pela ordem em que elas aparecem no alfabeto
+Googlon (que é diferente da nossa ordem, como vimos acima). Ou seja, a primeira letra do alfabeto Googlon
+representa o dígito 0, a segunda representa o dígito 1, e assim por diante.
+Por exemplo, a palavra zmbzmb tem o valor numérico de 6560820.
+Os Googlons consideram um número mágico (muito raro) se ele satisfaz uma propriedade: o valor numérico é
+divisível por 42 (resposta para tudo) e todos dígitos são distintos entre si.
+Ao consideramos o Texto A como uma lista de números (isto é, interpretando cada palavra como um número usando
+a convenção explicada acima), notamos que existem 8 números mágicos: kpbslq, gtrpzhwb, ghfntj, ljdz,
+gthkq, lbqjrp, jplzc e gjw
+QUESTÃO E) E no Texto B, quantos números mágicos existem e quais são?
+"""
+def numeroDaLetra(palavra):
+    somaNumLetras = 0
+    eleva20  = 1
+    for letra in palavra:
+        somaNumLetras= somaNumLetras + ordem.index(letra) * eleva20
+        eleva20= eleva20 * 20
+    return somaNumLetras
+
+cont = 0
+for palavraB in txtB:
+    if len(set(palavraB)) == len(palavraB) and numeroDaLetra(palavraB)%42==0:
+        cont= cont+1
+        print (palavraB)
+print(cont)
