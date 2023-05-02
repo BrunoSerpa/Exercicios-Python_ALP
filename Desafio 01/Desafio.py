@@ -97,10 +97,10 @@ vwtbh mfxs gbgw'''.split()
 e que terminan com uma letra tipo outras, é fácil ver que existem 71 preposições no Texto A. 
 QUESTÃO A) E no Texto B, quantas preposições existem?
 """
-quantPrepoB=0
-for palavraB in txtB:
-    if palavraB[0] in "zmb" and palavraB[-1] not in "zmb": quantPrepoB+=1
-print(quantPrepoB) 
+quantPrepo=0
+for palavra in txtA:
+    if palavra[0] in "zmb" and palavra[-1] not in "zmb": quantPrepo+=1
+print(quantPrepo)
 
 """
 Um outro fato interessante descoberto pelos lingüistas é que, no Googlon, os verbos sempre são palavras de 7 letras
@@ -109,16 +109,16 @@ primeira pessoa.
 Assim, lendo o Texto A, é possível identificar 84 verbos no texto, dos quais 70 estão em primeira pessoa.
 QUESTÃO B) Já no Texto B, quantos são os verbos?
 """
-quantVerboB, quantVerboPriB=0, 0
-for palavraB in txtB:
-    if not palavraB[-1] in "zmb" and len(palavraB)==7:
-        quantVerboB+=1
-        if not palavraB[0] in "zmb":
-            quantVerboPriB+=1
-print(quantVerboB)
+quantVerbo, quantVerboPri=0, 0
+for palavra in txtA:
+    if not palavra[-1] in "zmb" and len(palavra)==7:
+        quantVerbo+=1
+        if not palavra[0] in "zmb":
+            quantVerboPri+=1
+print(quantVerbo)
 
 """ QUESTÃO C) E quantos verbos do Texto B estão em primeira pessoa? """
-print(quantVerboPriB)
+print(quantVerboPri)
 
 """
 Um professor universitário utilizará os textos A e B para ensinar o Googlon aos alunos. Para ajudar os alunos a
@@ -179,15 +179,15 @@ fvjdqd fvntg fdsfsc fdh fgmcd fgrfb fgvsxzp'''.split()
 QUESTÃO D) Como seria a lista de vocabulário do Texto B?
 """
 ordem='zmbtshjpnwlrcxkqvdgf'
-def alfabetoGooglon(palavraB):
+def alfabetoGooglon(palavra):
     from string import ascii_uppercase as M
     resp= ''
-    for c in palavraB:
+    for c in palavra:
         resp = resp + M[ordem.index(c)]
     return resp
 
-txtB.sort(key=alfabetoGooglon)
-print(txtB)
+txtA.sort(key=alfabetoGooglon)
+print(txtA)
 
 """
 Mas como os Googlons escrevem números? Bem, no Googlon, as palavras também são números dados em base 20,
@@ -204,6 +204,7 @@ a convenção explicada acima), notamos que existem 8 números mágicos: kpbslq,
 gthkq, lbqjrp, jplzc e gjw
 QUESTÃO E) E no Texto B, quantos números mágicos existem e quais são?
 """
+ordem='zmbtshjpnwlrcxkqvdgf'
 def numeroDaLetra(palavra):
     somaNumLetras = 0
     eleva20  = 1
@@ -213,7 +214,7 @@ def numeroDaLetra(palavra):
     return somaNumLetras
 
 cont = 0
-for palavraB in txtB:
+for palavraB in txtA:
     if len(set(palavraB)) == len(palavraB) and numeroDaLetra(palavraB)%42==0:
         cont= cont+1
         print (palavraB)
