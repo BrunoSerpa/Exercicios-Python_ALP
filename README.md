@@ -36,6 +36,12 @@ Os exercícios com o título do seus devidos enunciados
 
 <details>
     <summary><b>Lista 3</b></summary>
+
+   - [Exercício 1](Lista%2003/Exerc%C3%ADcio01.py): Nota válida ou não
+   - [Exercício 2](Lista%2003/Exerc%C3%ADcio02.py): Nome e senha de usuário diferentes
+   - [Exercício 3](Lista%2003/Exerc%C3%ADcio03.py): População A ultrapasse a B
+   - [Exercício 4](Lista%2003/Exerc%C3%ADcio04.py): Sequência de Fibonacci
+   - [Exercício 5](Lista%2003/Exerc%C3%ADcio05.py): Máximo Divisor Comum
 </details>
 
 <details>
