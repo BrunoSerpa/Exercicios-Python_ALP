@@ -10,17 +10,16 @@ Os exercícios com o título do seus devidos enunciados
     <summary><b>Lista 1</b></summary> 
     
    - [Exercício 1](Lista%2001/Exerc%C3%ADcio01.py): Soma de Dois número
-   - [Exercício 2](Lista%2001/Exerc%C3%ADcio02.py):
-   Metros em Milímetros
+   - [Exercício 2](Lista%2001/Exerc%C3%ADcio02.py): Metros em Milímetros
    - [Exercício 3](Lista%2001/Exerc%C3%ADcio03.py): Dias + horas + minutos em segundos
    - [Exercício 4](Lista%2001/Exerc%C3%ADcio04.py): Aumento porcentual de salário
-   - [Exercício 5](Lista%2001/Exerc%C3%ADcio05.py):
-   - [Exercício 6](Lista%2001/Exerc%C3%ADcio06.py):
-   - [Exercício 7](Lista%2001/Exerc%C3%ADcio07.py):
-   - [Exercício 8](Lista%2001/Exerc%C3%ADcio08.py):
-   - [Exercício 9](Lista%2001/Exerc%C3%ADcio09.py):
-   - [Exercício 10](Lista%2001/Exerc%C3%ADcio10.py):
-   - [Exercício 11](Lista%2001/Exerc%C3%ADcio11.py):
+   - [Exercício 5](Lista%2001/Exerc%C3%ADcio05.py): Desconto da mercadoria
+   - [Exercício 6](Lista%2001/Exerc%C3%ADcio06.py): Tempo de uma viagem de carro
+   - [Exercício 7](Lista%2001/Exerc%C3%ADcio07.py): Celsius para Fahrenheit
+   - [Exercício 8](Lista%2001/Exerc%C3%ADcio08.py): Fahrenheit para Celsius
+   - [Exercício 9](Lista%2001/Exerc%C3%ADcio09.py): Preço do carro Alugado
+   - [Exercício 10](Lista%2001/Exerc%C3%ADcio10.py): Tempo de vida de um fumante
+   - [Exercício 11](Lista%2001/Exerc%C3%ADcio11.py): Digitos em 2 elevado a um milhão
 </details>
 
 <details>
