@@ -24,6 +24,14 @@ Os exercícios com o título do seus devidos enunciados
 
 <details>
     <summary><b>Lista 2</b></summary>
+    
+   - [Exercício 1](Lista%2002/Exerc%C3%ADcio01.py): Três lados de um triângulo
+   - [Exercício 2](Lista%2002/Exerc%C3%ADcio02.py): Ano bissexto
+   - [Exercício 3](Lista%2002/Exerc%C3%ADcio03.py): Multa em pescador
+   - [Exercício 4](Lista%2002/Exerc%C3%ADcio04.py): Maior de três números
+   - [Exercício 5](Lista%2002/Exerc%C3%ADcio05.py): Maior e menor de três números
+   - [Exercício 6](Lista%2002/Exerc%C3%ADcio06.py): Salário Líquido, IR, INSS e Sindicato
+   - [Exercício 7](Lista%2002/Exerc%C3%ADcio07.py): Latas de tinta e o preço total
 </details>
 
 <details>
