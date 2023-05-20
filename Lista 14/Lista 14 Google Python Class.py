@@ -48,7 +48,13 @@ def derivada(coef):
 # pode supor que n1 e n2 tem o mesmo número de dígitos
 # Não vale converter a lista em número para somar diretamente
 def soma(n1, n2):
-  return
+  n3, sobe = [], 0
+  for num in range(0, len(n1)):
+    if n1[num] + n2[num] + sobe > 9: n3.append(n1[num] + n2[num] + sobe - 10) 
+    else: n3.append(n1[num] + n2[num] + sobe)  
+    sobe = 0 if n1[num] + n2[num] + sobe < 10 else 1
+  if sobe ==1: n3.append(sobe)
+  return n3
 
 # H. Anagrama
 # Verifique se duas palavras são anagramas,
