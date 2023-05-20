@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+# !/usr/bin/python -tt
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
@@ -7,10 +7,13 @@
 # http://code.google.com/edu/languages/google-python-class/
 
 # Exercícios extras para listas
-
 # D. Dada uma lista de números retorna uma lista sem os elementos repetidos
 def remove_iguais(nums):
-  return
+  novalista=[]
+  for num in nums:
+    if num in novalista: continue
+    novalista.append(num)
+  return sorted(novalista)
 
 # E. Cripto desafio!!
 # Dada uma frase, você deve retirar todas as letras repetidas das palavras
