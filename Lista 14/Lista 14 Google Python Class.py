@@ -23,7 +23,13 @@ def remove_iguais(nums):
 # depois tente ordenar as letras e montar uma string com o resultado.
 # Utilize listas auxiliares se facilitar
 def cripto(frase):
-  return 
+  novapalavra = novafrase = ""
+  for letra in frase:
+    if letra==" ":
+      novafrase+=''.join(sorted(novapalavra)) + " "
+      novapalavra=""
+    elif not letra in novapalavra: novapalavra += letra
+  return novafrase+''.join(sorted(novapalavra))
 
 # F. Derivada de um polinômio
 # Os coeficientes de um polinômio estão numa lista na ordem do seu grau.
