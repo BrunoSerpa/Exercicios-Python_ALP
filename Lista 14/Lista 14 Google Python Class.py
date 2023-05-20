@@ -63,7 +63,7 @@ def soma(n1, n2):
 # anagrama('amor', 'ramo') = True
 # anagrama('aba', 'baba') = False
 def anagrama(s1, s2):
-  return 
+  return sorted(s1)==sorted(s2)
 
 def test(obtido, esperado):
   if obtido == esperado:
